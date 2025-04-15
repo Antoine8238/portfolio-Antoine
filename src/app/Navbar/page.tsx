@@ -1,16 +1,19 @@
-// components/Navbar.tsx
 "use client";
 import Link from "next/link";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
-    <nav className="w-full p-4 bg-white shadow-md fixed top-0 left-0 z-50">
-      <ul className="flex justify-center gap-6 text-sm font-semibold">
-        <li><Link href="#hero">Accueil</Link></li>
-        <li><Link href="#skills">Compétences</Link></li>
-        <li><Link href="#projects">Projets</Link></li>
-        <li><Link href="#contact">Contact</Link></li>
-      </ul>
+    <nav className={styles.navbar}>
+      <div className={styles.navContent}>
+        <span className={styles.logo}>Portfolio Antoine<span className={styles.dot}>.</span></span>
+        <ul className={styles.navLinks}>
+          <li><Link href="#hero" className={styles.link}>Accueil</Link></li>
+          <li><Link href="#skills" className={styles.link}>Compétences</Link></li>
+          <li><Link href="#projects" className={styles.link}>Projets</Link></li>
+          <li><Link href="#contact" className={styles.link}>Contact</Link></li>
+        </ul>
+      </div>
     </nav>
   );
 };

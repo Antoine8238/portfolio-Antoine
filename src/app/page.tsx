@@ -6,6 +6,11 @@ import ProjectsSection from './ProjectsSection/page';
 import ContactSection from './ContactSection/page';
 import Footer from './Footer/page';
 
+export const metadata = {
+  title: 'Portfolio de Antoine',
+  description: 'Portfolio personnel de Antoine',
+}
+
 export default function Home() {
   return (
     <main className="font-sans">
