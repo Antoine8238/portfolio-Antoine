@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 // Optionnel : tu peux installer react-icons pour les logos
 // npm install react-icons
-import { FaReact, FaJava, FaPython, FaHtml5, FaCss3Alt, FaDatabase } from "react-icons/fa";
+import {  FaJava, FaPython, FaHtml5, FaCss3Alt } from "react-icons/fa";
 import { SiSpringboot, SiMysql, SiJavascript, SiFlutter, SiNextdotjs, SiUnity } from "react-icons/si";
 
 const skills = [
